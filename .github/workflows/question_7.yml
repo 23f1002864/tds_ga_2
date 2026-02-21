@@ -19,6 +19,7 @@ jobs:
         key: cache-3f17a5b
 
     - name: prime-cache-3f17a5b
+      id: prime-cache-3f17a5b
       if: always()
       run: |
         echo "Cache Hit: ${{ steps.cache-step.outputs.cache-hit }}"
